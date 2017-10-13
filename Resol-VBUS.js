@@ -1,24 +1,24 @@
 //******************************************
 //************Dutchman & meifi2017**********
-//*******************V 1.1****************** 
+//*******************V 1.2****************** 
 //******************************************
 
 // define variable
 var vbus = require('resol-vbus');
 var headerSet = new vbus.HeaderSet();
 var conn;
-var create_states = false; // !!! set initial on true to create states once, disable value afterwards to update states !!
 
 // Schedule every 20 seconds
 schedule("*/20 * * * * *", function () {
 
 
 //*****************************SET VARs***************************************************************************
-var resolhost = '';      // Can be used with via.vbus.net OR internal 192xxxxx adress !
+var resolhost = '';                         // Can be used with via.vbus.net OR internal 192xxxxx adress !
 var resolviaTag = 'xxxx';                   // only necessary if connected using VBus.net otherwise leave empty
-var resolpass = 'vbus';                 //default is set
-var resolDL3 = false;           //set to true if you use a DL3
-var worktime = 10000;           // 10 second timer, collection all information takes some seconds [emoji6]
+var resolpass = 'vbus';                     //default is set
+var resolDL3 = false;                       //set to true if you use a DL3
+var worktime = 10000;                       // 10 second timer, collection all information takes some seconds [emoji6]
+var create_states = false;                  // initial on true to create states once, disable value afterwards to update states !!!
 
 //*****************************Dont edit something below**********************************************************
 

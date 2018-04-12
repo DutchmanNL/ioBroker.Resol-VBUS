@@ -22,17 +22,17 @@ Option 2 : installation by command line:
 1) logon with SSH to your iobroker installation
 2) go to your installation directory '/opt/iobroker/node_modules/iobroker.javascript/'
 3) run the commands below to install the required packages packages:
-'
+```
 sudo npm install resol-vbus
 sudo npm install express
 sudo npm install kue
 sudo npm install optimist
-'
+```
 
 Now go to your script tab and create a new script, copy and paste the content of Resol-VBUS.js
 Adjust connection settings to fullfill your needs:
 
-'
+```
 var config = {
     "connection": {
         "class": "TcpConnection",
@@ -44,5 +44,5 @@ var config = {
         }
     }
 };
-'
+```
 
